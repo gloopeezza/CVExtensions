@@ -10,6 +10,6 @@
 
 @interface UIImage (cvMat)
 
-+ (UIImage *)imageWithCVMat:(cv::Mat *)cvMat;
-- (cv::Mat *)cvMat;
++ (UIImage *)imageWithCVMat:(cv::Mat)cvMat;
+- (cv::Mat)cvMat;
 @end
