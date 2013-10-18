@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F7283538181166AA0006ADE0 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7283537181166AA0006ADE0 /* opencv2.framework */; };
+		F728353B181166FE0006ADE0 /* UIImage+cvMat.mm in Sources */ = {isa = PBXBuildFile; fileRef = F728353A181166FE0006ADE0 /* UIImage+cvMat.mm */; };
 		F7D71C03181164A8006DBBFF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7D71C02181164A8006DBBFF /* Foundation.framework */; };
 		F7D71C08181164A8006DBBFF /* CVExtensions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F7D71C07181164A8006DBBFF /* CVExtensions.h */; };
 		F7D71C11181164A8006DBBFF /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7D71C10181164A8006DBBFF /* XCTest.framework */; };
@@ -41,6 +43,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F7283537181166AA0006ADE0 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = ../../../Frameworks/opencv2.framework; sourceTree = "<group>"; };
+		F7283539181166FE0006ADE0 /* UIImage+cvMat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+cvMat.h"; sourceTree = "<group>"; };
+		F728353A181166FE0006ADE0 /* UIImage+cvMat.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "UIImage+cvMat.mm"; sourceTree = "<group>"; };
 		F7D71BFF181164A8006DBBFF /* libCVExtensions.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCVExtensions.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7D71C02181164A8006DBBFF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F7D71C06181164A8006DBBFF /* CVExtensions-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CVExtensions-Prefix.pch"; sourceTree = "<group>"; };
@@ -58,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7283538181166AA0006ADE0 /* opencv2.framework in Frameworks */,
 				F7D71C03181164A8006DBBFF /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -98,6 +104,7 @@
 		F7D71C01181164A8006DBBFF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F7283537181166AA0006ADE0 /* opencv2.framework */,
 				F7D71C02181164A8006DBBFF /* Foundation.framework */,
 				F7D71C10181164A8006DBBFF /* XCTest.framework */,
 				F7D71C13181164A8006DBBFF /* UIKit.framework */,
@@ -144,6 +151,8 @@
 		F7D71C28181164CE006DBBFF /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				F7283539181166FE0006ADE0 /* UIImage+cvMat.h */,
+				F728353A181166FE0006ADE0 /* UIImage+cvMat.mm */,
 			);
 			name = UIKit;
 			sourceTree = "<group>";
@@ -229,6 +238,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F728353B181166FE0006ADE0 /* UIImage+cvMat.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,6 +346,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DSTROOT = /tmp/CVExtensions.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/ploddi/Projects/Frameworks,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CVExtensions/CVExtensions-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
@@ -348,6 +362,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DSTROOT = /tmp/CVExtensions.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/ploddi/Projects/Frameworks,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CVExtensions/CVExtensions-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
@@ -413,6 +431,7 @@
 				F7D71C24181164A8006DBBFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F7D71C25181164A8006DBBFF /* Build configuration list for PBXNativeTarget "CVExtensionsTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +440,7 @@
 				F7D71C27181164A8006DBBFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
