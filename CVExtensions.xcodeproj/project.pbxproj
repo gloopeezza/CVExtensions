@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		F7D71C03181164A8006DBBFF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7D71C02181164A8006DBBFF /* Foundation.framework */; };
 		F7D71C08181164A8006DBBFF /* CVExtensions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F7D71C07181164A8006DBBFF /* CVExtensions.h */; };
-		F7D71C0A181164A8006DBBFF /* CVExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = F7D71C09181164A8006DBBFF /* CVExtensions.m */; };
 		F7D71C11181164A8006DBBFF /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7D71C10181164A8006DBBFF /* XCTest.framework */; };
 		F7D71C12181164A8006DBBFF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7D71C02181164A8006DBBFF /* Foundation.framework */; };
 		F7D71C14181164A8006DBBFF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7D71C13181164A8006DBBFF /* UIKit.framework */; };
@@ -46,7 +45,6 @@
 		F7D71C02181164A8006DBBFF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F7D71C06181164A8006DBBFF /* CVExtensions-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CVExtensions-Prefix.pch"; sourceTree = "<group>"; };
 		F7D71C07181164A8006DBBFF /* CVExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CVExtensions.h; sourceTree = "<group>"; };
-		F7D71C09181164A8006DBBFF /* CVExtensions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CVExtensions.m; sourceTree = "<group>"; };
 		F7D71C0F181164A8006DBBFF /* CVExtensionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CVExtensionsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7D71C10181164A8006DBBFF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		F7D71C13181164A8006DBBFF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -111,7 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				F7D71C07181164A8006DBBFF /* CVExtensions.h */,
-				F7D71C09181164A8006DBBFF /* CVExtensions.m */,
+				F7D71C28181164CE006DBBFF /* UIKit */,
 				F7D71C05181164A8006DBBFF /* Supporting Files */,
 			);
 			path = CVExtensions;
@@ -141,6 +139,13 @@
 				F7D71C1B181164A8006DBBFF /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F7D71C28181164CE006DBBFF /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = UIKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,7 +229,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7D71C0A181164A8006DBBFF /* CVExtensions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
